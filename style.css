@@ -1,0 +1,57 @@
+.container{
+    background-color: black;
+    color: white;
+    height:500px;
+    width:80%;
+    
+    margin: 50px auto 20px;
+    border-radius: 10px;
+
+}
+img{
+    margin-top: 30px;
+}
+.header-detail{
+    display: flex;
+    justify-content: center;
+}
+.header-detail ,.child-div {
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+}
+.button{
+    background-color: red;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    height:35px;
+    width: 120px;
+    position: relative;
+    animation-name:button;
+    animation-duration:2s;
+    animation-iteration-count:2;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay:2s;
+
+}
+@keyframes button {
+    0%{
+        top:0px;
+        left: 0px;
+    }
+    25%{
+        top:60px;
+        left: 0px;
+    }
+    75%{
+        top:60px;
+        left: 60px;
+    }
+    100%{
+        top: 0px;
+        left: 60px;
+    }
+    
+}
