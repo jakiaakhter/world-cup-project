@@ -128,12 +128,13 @@ min-width: 260px;
 }
 
 .my-button button {
+    font-weight: 700;
     border-radius: 8px;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-color: red;
-    padding: 14px;
+    padding:10px 10px;
     height:35px ;
     width: 125px;
 }
@@ -143,6 +144,7 @@ footer{
 }
 .goal{
     text-align: center;
+    margin-top: 15px;
 }
 .my-footer{
     height: 250px;
@@ -157,13 +159,65 @@ footer{
     margin: 0 100px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
+    .article{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .my-button {
         display: none;
     }
     .my-footer{
+        justify-content: center;
         flex-direction: column;
     }
+    .container{
+        position: relative;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+    }
+    .header-detail{
+        display: block;
+    }
+    .button{
+        display: block;
+    }
+    .icon-item{
+        display: inline-block;
+    }
+    .child-div {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .blog-side{
+        justify-content: center;
+    }
+    .child-div img{
+        width: 150px;
+        position: absolute;
+        bottom: 0;
+
+    }
+    
+    }
+
+}
 
 
+
+@media screen and(min-width:768px)and (min-width:999px) {
+.container{
+    display: block;
+}
+    
+}
+.media-icon{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 40px;
 }
